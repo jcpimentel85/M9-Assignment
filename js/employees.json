@@ -1,0 +1,7 @@
+[
+    {"id": 34123413, "name":"Zak Ruvalcaba", "ext": 3424, "mail": "zak@vectacorp.com", "dept": "Executive"},
+    {"id":23424665, "name":"Sally Smith", "ext": 2344, "mail": "sally@vectacorp.com", "dept": "Administrative"},
+    {"id":12341244, "name":"Mark Martin", "ext": 5352, "mail": "mark@vectacorp.com", "dept": "Sales"},
+    {"id":14545423, "name":"Robin Banks", "ext": 7867, "mail": "robin@vectacorp.com", "dept": "Marketing"},
+    {"id":13413453, "name":"Sue Wedge", "ext": 1235, "mail":"sue@vectacorp.com", "dept": "QA"}
+]
