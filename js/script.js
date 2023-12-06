@@ -12,7 +12,10 @@ let empTable    = document.querySelector('#employees')
 let empCount    = document.querySelector('#empCount')
 
 // BUILD THE EMPLOYEES TABLE WHEN THE PAGE LOADS
-buildGrid(employees)
+//import fs from 'fs'
+import fetchEmployees from './init.js'
+//employees = require('./init')
+buildGrid(fetchEmployees)
 
 // DELETE EMPLOYEE
 empTable.addEventListener('click', (e) => {
@@ -27,10 +30,11 @@ empTable.addEventListener('click', (e) => {
     }
 })
 
-const loadEmployeeData = require("../js/data/employees.json")
+
 
 // BUILD THE EMPLOYEES GRID
 function buildGrid(employees) {
+    //await loadEmployeeData.employees()
     // REMOVE THE EXISTING SET OF ROWS BY REMOVING THE ENTIRE TBODY SECTION
     empTable.lastElementChild.remove()
     // REBUILD THE TBODY FROM SCRATCH
