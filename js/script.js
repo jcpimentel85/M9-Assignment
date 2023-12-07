@@ -12,9 +12,15 @@ let empTable    = document.querySelector('#employees')
 let empCount    = document.querySelector('#empCount')
 
 // BUILD THE EMPLOYEES TABLE WHEN THE PAGE LOADS
-//import fs from 'fs'
 import employees from './init.js'
-console.log(employees)
+//const employees = require('./init')
+//employees = new employees(
+// constructor(id,ext,email) 
+//     employee.id = [0]
+//     employee.name = [1]
+//     employee.ext = [2]
+
+console.log("Log from Script.js", employees.id)
 //let employees = fetchEmployees.employees
 //console.log(employees)
 //console.log (fetchEmployees)

@@ -16,9 +16,10 @@
 //     .catch( e => console.log(e.message) );
 async function fetchEmployees() {
         try {
-            const employees = "juan pimentel"
-            //const response = await fetch('../js/data/employees.json'); 
-            //const employees = await response.json();
+            //const employees = [["juan pimentel", 1234], ["carlos ochoa", 5678]]
+            //const employees = "juan pimentel"
+            const response = await fetch('../js/data/employees.json'); 
+            const employees = await response.json();
             //console.log(employees)
             // for (let user of employees) {[]
                 // document.body.innerHTML += 
@@ -33,8 +34,19 @@ async function fetchEmployees() {
             console.error(error);
         }
     }
-fetchEmployees();
+fetchEmployees()
+    .then(employees => {
+       // '${employees.id}'
+    console.log('Fetched employees from init.js:', employees);
+    // Do something with the fetched users
+  })
+  .catch(error => {
+    // Handle any errors that occurred during the fetch
+    console.error('Error fetching users from:', error);
+  });
 
-export default fetchEmployees(employees)
+export default employees
+//module.exports = employees
  
-console.log(fetchEmployees(employees))
+//console.log(fetchEmployees(employees))
+console.log(employees)
