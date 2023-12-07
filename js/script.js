@@ -13,9 +13,14 @@ let empCount    = document.querySelector('#empCount')
 
 // BUILD THE EMPLOYEES TABLE WHEN THE PAGE LOADS
 //import fs from 'fs'
-import fetchEmployees from './init.js'
+import employees from './init.js'
+console.log(employees)
+//let employees = fetchEmployees.employees
+//console.log(employees)
+//console.log (fetchEmployees)
+//let employees = fetchEmployees(Response)
 //employees = require('./init')
-buildGrid(fetchEmployees)
+buildGrid(employees)
 
 // DELETE EMPLOYEE
 empTable.addEventListener('click', (e) => {

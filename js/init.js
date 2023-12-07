@@ -16,8 +16,9 @@
 //     .catch( e => console.log(e.message) );
 async function fetchEmployees() {
         try {
-            const response = await fetch('../js/data/employees.json'); 
-            const employees = await response.json();
+            const employees = "juan pimentel"
+            //const response = await fetch('../js/data/employees.json'); 
+            //const employees = await response.json();
             //console.log(employees)
             // for (let user of employees) {[]
                 // document.body.innerHTML += 
@@ -33,6 +34,7 @@ async function fetchEmployees() {
         }
     }
 fetchEmployees();
-export default fetchEmployees
 
+export default fetchEmployees(employees)
+ 
 console.log(fetchEmployees(employees))
